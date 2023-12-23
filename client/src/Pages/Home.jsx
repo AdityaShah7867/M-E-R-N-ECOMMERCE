@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import useAuth from "../Context/authContext";
 import useProduct from "../Context/ProductContext";
-import StarRatingComponent from "react-star-rating-component";
+// import StarRatingComponent from "react-star-rating-component";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -126,12 +126,12 @@ const Home = () => {
                 <p className="text-gray-700 text-sm mb-2">
                   <i className="fas fa-star text-yellow-500"></i>{" "}
                   {product.rating} STARS{" "}
-                  <StarRatingComponent
+                  {/* <StarRatingComponent
                     name={`rating_${product.id}`}
                     value={parseFloat(product.rating)}
                     starCount={5}
                     editing={false}
-                  />
+                  /> */}
                 </p>
 
                 <p className="text-gray-700 text-sm mb-4 leading-relaxed">
